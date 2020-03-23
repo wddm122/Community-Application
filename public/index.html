@@ -16,8 +16,8 @@
 </head>
 <body>
   <header class="header">
-    <nav class="navbar navbar-light bg-faded">
-      <ul class="nav navbar-nav">
+    <nav class="navbar">
+      <ul >
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
@@ -28,32 +28,15 @@
     </nav>
   </header>
   <main class="wrapper">
-    <!-- <div class="container-fluid">
-      
-      <div class="col-lg-8">
-        <div class="chat" id="output">
-    
-        </div>
-        <div class="form-inline">
-          <div class="form-group">
-            <div class="input-group">
-              <textarea name="name" class="text-chat" id="message"></textarea>
-              <button type="button" class="btn btn-primary btn-chat">SEND</button>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div> -->
 
-    <div id="mario-chat">
+    <div id="chat-container">
       <h2>Web Chat</h2>
       <div id="chat-window">
           <div id="output"></div>
           <div id="feedback"></div>
       </div>
       <input id="handle" type="text" placeholder="Name" />
-      <input id="message" type="text" placeholder="Message" />
+      <input id="message" type="text" placeholder="Message" class="message"/>
       <button id="send">Send</button>
   </div>
 
