@@ -21,30 +21,42 @@
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <input class="form-control" id="name" type="text" placeholder="name">
-        </li>
+        <!-- <li class="nav-item">
+          <input class="form-control" id="handle" type="text" placeholder="name">
+        </li> -->
       </ul>
     </nav>
   </header>
   <main class="wrapper">
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
       
       <div class="col-lg-8">
-        <div class="chat">
+        <div class="chat" id="output">
     
         </div>
         <div class="form-inline">
           <div class="form-group">
             <div class="input-group">
-              <textarea name="name" class="text-chat"></textarea>
+              <textarea name="name" class="text-chat" id="message"></textarea>
               <button type="button" class="btn btn-primary btn-chat">SEND</button>
             </div>
           </div>
           
         </div>
       </div>
-    </div>
+    </div> -->
+
+    <div id="mario-chat">
+      <h2>Mario Chat</h2>
+      <div id="chat-window">
+          <div id="output"></div>
+          <div id="feedback"></div>
+      </div>
+      <input id="handle" type="text" placeholder="Handle" />
+      <input id="message" type="text" placeholder="Message" />
+      <button id="send">Send</button>
+  </div>
+
   </main>
   <footer class="footer">
     <ul>
