@@ -8,7 +8,7 @@
   <meta name="author" content="Ivandi S">
   <!-- You may change this "Reset" to "Normalize" if preferred -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
-  
+
   <link rel="stylesheet" href="css/reset.css"> 
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> Material design icons are use below. Remove this line if using other font packs or images. Details on Material Design icons can be found here: https://material.io/resources/icons/ -->
   <!-- <script src="https://kit.fontawesome.com/91d2257466.js" crossorigin="anonymous"></script> -->
@@ -35,10 +35,15 @@
           <div id="output"></div>
           <div id="feedback"></div>
       </div>
-      <input id="handle" type="text" placeholder="Name" />
-      <input id="message" type="text" placeholder="Message" class="message"/>
-      <button id="send">Send</button>
+      <input id="handle" type="text" placeholder="Name" class="name"/>
+      <!-- <input id="message" type="text" placeholder="Message" class="message"/> -->
+      <div class="message-send">
+      <textarea placeholder="Message" class="message" id="message"></textarea>
+      <button id="send" class="send">Send</button>
+      </div>  
   </div>
+
+
 
   </main>
   <footer class="footer">
@@ -47,5 +52,6 @@
     </ul>
   </footer>
   <script src="js/chat.js"></script>
+
 </body>
 </html>

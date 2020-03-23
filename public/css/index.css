@@ -12,6 +12,7 @@
   font-family: 'Nunito';
   background-color: var(--bg);
   color: var(--light);
+  font-size: 1rem;
 }
 
 h2{
@@ -35,10 +36,10 @@ h2{
 }
 
 #output p{
-  padding: 14px 0px;
-  margin: 0 20px;
-  border-bottom: 1px solid #e9e9e9;
-  color: #555;
+  padding: 1rem 0px;
+  margin: 0 1.5rem;
+
+  color:var(--light);
 }
 
 #feedback p{
@@ -48,7 +49,8 @@ h2{
 }
 
 #output strong{
-  color: #575ed8;
+  color: white;
+  font-weight: bold;
 }
 
 label{
@@ -57,26 +59,40 @@ label{
   padding: 10px 20px;
 }
 
-input{
+.name{
   padding: 10px 20px;
   box-sizing: border-box;
   background-color: var(--bg-chat);
   display: block;
   width: 100%;
   font-family: Nunito;
-  font-size: 1rem;
   border: 1px solid whitesmoke;
+  color: var(--light);
 }
 
+.message-send{
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
 
-button{
+.message {
+  max-width: 100%;
+  min-width: 80%;
+  min-height: 4rem;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--bg-chat);
+  color: var(--light);
+
+}
+.send{
   background: #575ed8;
   color: var(--light);
   font-size: 1.25rem;
-  border: 0;
-  padding: 12px 0;
+  padding: 1rem 0;
   width: 100%;
-  border-radius: 0 0 2px 2px;
+
+
 }
 
 .footer{
@@ -84,3 +100,6 @@ button{
   border-top: solid 1px whitesmoke;
   padding: 1rem;
 }
+
+
+
