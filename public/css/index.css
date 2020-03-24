@@ -8,11 +8,36 @@
   
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.header{
+  position: fixed;
+  top: 1em;
+}
+
  body{
   font-family: 'Nunito';
   background-color: var(--bg);
   color: var(--light);
   font-size: 1rem;
+  margin-top: 5em;
+}
+.header{
+  display:grid;
+  grid-template-columns: 2fr 2fr 1fr;
+
+}
+
+.navbar{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.nav-item{
+  text-align: center;
 }
 
 h2{
@@ -96,9 +121,11 @@ label{
 }
 
 .footer{
-
+  position: fixed;
+  bottom:0;
   border-top: solid 1px whitesmoke;
-  padding: 1rem;
+  padding: 1em;
+  width:100%;
 }
 
 
