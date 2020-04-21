@@ -1,27 +1,19 @@
 {
-  "name": "community-application",
-  "version": "1.0.0",
-  "description": "Chat App-Web Socket",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wddm122/Community-Application.git"
-  },
-  "author": "Ivandi Santoso",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wddm122/Community-Application/issues"
-  },
-  "homepage": "https://github.com/wddm122/Community-Application#readme",
+  "name": "routing",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "express": "^4.17.1",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
     "socket.io": "^2.3.0"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.2"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

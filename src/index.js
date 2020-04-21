@@ -1,9 +1,8 @@
-
-
-
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+import "./css/reset.css";
+import "./css/index.css";
+
 import {
   Route,
   NavLink,
@@ -12,7 +11,7 @@ import {
 } from "react-router-dom";
 import App from "./App";
 import Users from "./users";
-import Contact from "./contact";
+// import Contact from "./contact";
 import Chat from "./chat";
 import Notfound from "./notfound";
 
@@ -20,7 +19,7 @@ import Notfound from "./notfound";
 
 const routing = (
   <Router>
-    <div>
+    <nav class="header-nav">
       <ul>
         <li>
           <NavLink exact activeClassName="active" to="/">
@@ -32,11 +31,11 @@ const routing = (
             Users
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink activeClassName="active" to="/contact">
             Contact
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink activeClassName="active" to="/chat">
             Chat
@@ -47,12 +46,12 @@ const routing = (
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/users" component={Users} />
-        <Route path="/contact" component={Contact} />
+        {/* <Route path="/contact" component={Contact} /> */}
         <Route path="/chat" component={Chat} />
 
         <Route component={Notfound} />
       </Switch>
-    </div>
+    </nav>
   </Router>
 );
 
