@@ -48,7 +48,6 @@ const routing = (
         <Route path="/users" component={Users} />
         {/* <Route path="/contact" component={Contact} /> */}
         <Route path="/chat" component={Chat} />
-
         <Route component={Notfound} />
       </Switch>
     </nav>
