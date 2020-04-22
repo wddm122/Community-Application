@@ -5,15 +5,18 @@ const Header = ({heading}) => {
 
 	return (
 		<header>
-			<nav>
+			<nav class="header-nav">
 				<ul>
-					<li><Link to="/">Course Home</Link></li>
-					<li><Link to="/lessons">Lessons</Link></li>
+					<li><Link exact activeClassName="active" to="/">Home</Link></li>
+					<li><Link activeClassName="active" to="/users">Users</Link></li>
+					<li><Link activeClassName="active" to="/chat">Chat</Link></li>
 				</ul>
+				<hr />
 			</nav>
 			{(heading) ? <h1>{heading}</h1> : `No heading`}
 			
 		</header>
+		
 	)
 }
 

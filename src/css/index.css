@@ -1,5 +1,59 @@
-body {
-	margin: 0;
-	background-color: lightgrey;
-	font: 1em helvetica, arial, sans-serif;
+:root{
+  --headerFooter: #1E1E1E;
+  --bg: #111111;
+  --bg-chat: #292929;
+  --light: #E0E0E0;
+  --link: #0000EE;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ body{
+  font-family: 'Nunito';
+  background-color: var(--bg);
+  color: var(--light);
+  font-size: 1rem;
+
+}
+
+.active{
+  color:grey;
+}
+
+.header-nav a{
+  display: grid;
+  padding: 0.5rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+
+
+}
+
+.header-nav a:hover  {
+color: #575ed8;
+}
+
+.nav-item{
+  text-align: center;
+}
+
+.title{
+  border: 1px solid whitesmoke;
+}
+
+
+@media(min-width: 600px){
+
+
+  .header-nav ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+  }
 }
