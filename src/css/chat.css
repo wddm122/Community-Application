@@ -13,7 +13,7 @@ h2{
 }
 
 #chat-window{
-  height: 350px;
+  height: 325px;
   overflow: auto;
   background-color: var(--bg-chat);
   border: 1px solid whitesmoke;
@@ -74,10 +74,3 @@ h2{
 
 }
 
-.footer{
-  position: fixed;
-  bottom:0;
-  border-top: solid 1px whitesmoke;
-  padding: 1em;
-  width:100%;
-}

@@ -47,6 +47,13 @@ color: #575ed8;
   border: 1px solid whitesmoke;
 }
 
+.footer{
+  position: fixed;
+  bottom:0;
+  border-top: solid 1px whitesmoke;
+  padding: 1em;
+  width:100%;
+}
 
 @media(min-width: 600px){
 
