@@ -103,3 +103,29 @@ Pages built with dynamic content and functionality.
 | Data Management | 10 | Overall management of Data using Context or other means  |
 | Code & Efficiency | 5 | Use of best practices, documentation and overall cleanliness  |
 | Design & Overall Impression | 10 | Usability, design and overall look & feel  |
+
+
+
+# Quick React Demo
+
+A quick React demo and test. To run from the command line (in this root folder):
+
+## 1. Install the Node Modules
+
+```shell
+npm install
+```
+
+## 2. Run the Webpack Server
+
+```shell
+npm start
+```
+
+## 3. Build the public files ("dist")
+
+Only required when publishing live online.
+
+```shell
+npm run build
+```

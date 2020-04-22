@@ -1,0 +1,76 @@
+h2{
+  font-size: 18px;
+  padding: 0.5rem;
+  color:var(--light);
+}
+
+#chat-container{
+  max-width: 600px;
+  margin: 1rem auto;
+
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+  border-radius: 2px;
+}
+
+#chat-window{
+  height: 350px;
+  overflow: auto;
+  background-color: var(--bg-chat);
+  border: 1px solid whitesmoke;
+}
+
+#output p{
+  padding: 1rem 0px;
+  margin: 0 1.5rem;
+
+  color:var(--light);
+}
+
+#feedback p{
+  color: #aaa;
+  padding: 14px 0px;
+  margin: 0 20px;
+}
+
+#output strong{
+  color: white;
+  font-weight: bold;
+}
+
+
+.name{
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: var(--bg-chat);
+  display: block;
+  width: 100%;
+  font-family: Nunito;
+  border: 1px solid whitesmoke;
+  color: var(--light);
+}
+
+.message-send{
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.message {
+  max-width: 100%;
+  min-width: 80%;
+  min-height: 4rem;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--bg-chat);
+  color: var(--light);
+
+}
+.send{
+  background: #575ed8;
+  color: var(--light);
+  font-size: 1.25rem;
+  padding: 1rem 0;
+  width: 100%;
+
+
+}
+
