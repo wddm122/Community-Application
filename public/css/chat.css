@@ -13,7 +13,7 @@ h2{
 }
 
 #chat-window{
-  height: 350px;
+  height: 325px;
   overflow: auto;
   background-color: var(--bg-chat);
   border: 1px solid whitesmoke;

@@ -22,6 +22,8 @@ var io = socket(server);
 
 io.on('connection',function(socket){
   console.log(`a user connected`,socket.id);
+  socket.on('disconnect', () => console.log('Client disconnected'));
+
 
     // Handle chat event
     socket.on('chat', function(data){
