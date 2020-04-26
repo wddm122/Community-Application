@@ -21,7 +21,7 @@
     <nav class="navbar">
       <ul >
         <li class="active">
-          <p class="announcement red">Welcome to Anonymous Chat Room.</p>
+          <p class="announcement red">Room 2</p>
           <p class="announcement">It is a free chat room where you can use any name to say anything. </p>
         </li>
       </ul>
@@ -29,18 +29,32 @@
   </header>
   <hr>
   
-    <div class="portals">
-      <p class="p-list">Chat Room Portals:</p>
-      <ul class="p-item">
-        <li><a href="/room1">ROOM 1:</a></li>
-        <li><a href="/room2">ROOM 2:</a></li>
-        <li><a href="/room3">ROOM 3:</a></li>
+  <main class="wrapper">
+    <div class="rooms">
+      <ul class="room-list">
+        <li><a href="/room1">ROOM 1</a></li>
+        <li><a href="/room2">ROOM 2</a></li>
+        <li><a href="/room3">ROOM 3</a></li>
+        <li><a href="/index">Back to Homepage</a></li>
+
 
       </ul>
 
 
     </div>
-    
+    <div id="chat-container" class="window">
+      <h2>Web Chat</h2>
+      <div id="chat-window">
+          <div id="output"></div>
+          <div id="feedback"></div>
+      </div>
+      <input id="handle" type="text" placeholder="Name" class="name"/>
+      <!-- <input id="message" type="text" placeholder="Message" class="message"/> -->
+      <div class="message-send">
+      <textarea placeholder="Message" class="message" id="message"></textarea>
+      <button id="send" class="send">Send</button>
+      </div>  
+  </div>
   </main>
 
   <footer class="footer">

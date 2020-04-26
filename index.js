@@ -15,7 +15,13 @@ var server = app.listen(PORT,function(){
 //Static files
 // app.use(express.static('public'));
 app.use('/', express.static(path.join(__dirname, '/public')));
-app.get('*', (req, res) => res.sendFile(path.join(__dirname, '/public/index.html')));
+app.get('/index', (req, res) => res.sendFile(path.join(__dirname, '/public/index.html')));
+app.get('/room1', (req, res) => res.sendFile(path.join(__dirname, '/public/room1.html')));
+app.get('/room2', (req, res) => res.sendFile(path.join(__dirname, '/public/room2.html')));
+app.get('/room3', (req, res) => res.sendFile(path.join(__dirname, '/public/room3.html')));
+
+
+
 
 //Socket setup
 var io = socket(server);

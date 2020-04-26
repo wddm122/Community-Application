@@ -1,3 +1,6 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
 :root{
   --headerFooter: #1E1E1E;
   --bg: #111111;
