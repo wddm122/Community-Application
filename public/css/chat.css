@@ -104,6 +104,7 @@ hr{
 }
 .portals{
   text-align: center;
+  min-height:60vh;
 }
 
 .p-list{
@@ -123,4 +124,9 @@ hr{
   font-size: 2em;
 
 
+}
+@media(max-width: 600px){
+  .room-list{
+    font-size:1em;
+  }
 }
